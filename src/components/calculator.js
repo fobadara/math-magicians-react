@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Screen from './screen';
 import Keypad from './keypad';
+import calculate from '../logic/calculate';
 
 const keys = [
   { id: 'clear', class: 'operators', value: 'AC' },
@@ -26,18 +27,33 @@ const keys = [
 ];
 
 class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      next: '',
+      operation: '',
+    };
+  }
+
+  // Add eventlistener to buttons
+  handleButtonClick = (event) => {
+    const { total, next, operation } = calculate(this.state, event.target.name);
+    this.setState({ total, next, operation });
+  }
+
   render = () => (
     <main>
       <div>
         <div>
-          <Screen />
+          <Screen state={this.state} />
         </div>
         <div>
-          <Keypad keys={keys} />
+          <Keypad keys={keys} onClick={this.handleButtonClick} state={this.state} />
         </div>
       </div>
     </main>
-  );
+  )
 }
 
 export default Calculator;
