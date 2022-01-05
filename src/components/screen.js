@@ -1,18 +1,14 @@
+// Please ignore the comment on line 5.
+// It is necessary because we were instructed to write
+// our code with classes and not stateless function
+
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Screen extends Component {
   render() {
-    // console.log(this.props.state.total);
-    // const {props} = this;
-    // todo: line 9 and 10 works
-    // const { ...data } = this.props;
-    // console.log(data.state.total);
-    // const { data } = this.props;
-    // console.log(data);
     const {
-      // data,
       state: { total, operation, next },
     } = this.props;
 
@@ -28,9 +24,18 @@ class Screen extends Component {
 
 Screen.propTypes = {
   state: PropTypes.shape({
-    total: PropTypes.string.isRequired,
-    operation: PropTypes.string.isRequired,
-    next: PropTypes.string.isRequired,
+    total: PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.shape({}).isRequired,
+    ]),
+    operation: PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.shape({}).isRequired,
+    ]),
+    next: PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.shape({}).isRequired,
+    ]),
   }).isRequired,
 };
 

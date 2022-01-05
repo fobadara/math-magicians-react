@@ -9,9 +9,6 @@
 
 N.B: Images will be added on final milestone
 
-**<div align="center"><a href="https://fobadara.github.io/math-magicians-react/" text="bold">Live Demo</a></div>**
-
-
 **Built With 🔨**
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
