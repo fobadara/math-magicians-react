@@ -3,20 +3,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Keypad extends Component {
-  render = () => {
-    const buttons = [];
-    const { keys } = this.props;
-    keys.forEach((key) => {
-      buttons.push(<button type="button" id={key.id} className={key.class} key={key.id}>{key.value}</button>);
-    });
+  createButtons() {
+    const { keys, onClick } = this.props;
+
     return (
-      <span id="keypad-container">{buttons}</span>
+      keys.map((key) => <button name={key.value} type="button" onClick={onClick} id={key.id} className={key.class} key={key.id}>{key.value}</button>)
     );
-  };
+  }
+
+  render = () => (
+    <span id="keypad-container">{this.createButtons()}</span>
+  );
 }
 
 Keypad.propTypes = {
   keys: PropTypes.instanceOf(Array).isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Keypad;

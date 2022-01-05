@@ -12,7 +12,7 @@ const keys = [
   { id: 'seven', class: 'numbers', value: '7' },
   { id: 'eight', class: 'numbers', value: '8' },
   { id: 'nine', class: 'numbers', value: '9' },
-  { id: 'multiply', class: 'operators right', value: '×' },
+  { id: 'multiply', class: 'operators right', value: 'x' },
   { id: 'four', class: 'numbers', value: '4' },
   { id: 'five', class: 'numbers', value: '5' },
   { id: 'six', class: 'numbers', value: '6' },
@@ -30,7 +30,7 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0,
+      total: '0',
       next: '',
       operation: '',
     };
@@ -42,18 +42,21 @@ class Calculator extends Component {
     this.setState({ total, next, operation });
   }
 
-  render = () => (
-    <main>
-      <div>
+  render = () => {
+    const data = this.state;
+    return (
+      <main>
         <div>
-          <Screen state={this.state} />
+          <div>
+            <Screen state={this.state} />
+          </div>
+          <div>
+            <Keypad keys={keys} onClick={this.handleButtonClick} state={{ ...data }} />
+          </div>
         </div>
-        <div>
-          <Keypad keys={keys} onClick={this.handleButtonClick} state={this.state} />
-        </div>
-      </div>
-    </main>
-  )
+      </main>
+    );
+  }
 }
 
 export default Calculator;
