@@ -35,6 +35,13 @@ To get a local copy up and running follow these simple example steps.
 ```bash 
 git clone https://github.com/fobadara/math-magicians-react.git
 ```
+> view it in your browser by running this command
+
+```bash
+### `npm start`
+```
+It runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000).
 
 **Prerequisites 📜**
 
