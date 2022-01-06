@@ -1,7 +1,7 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import Screen from './screen';
 import Keypad from './keypad';
+import calculate from '../logic/calculate';
 
 const keys = [
   { id: 'clear', class: 'operators', value: 'AC' },
@@ -11,7 +11,7 @@ const keys = [
   { id: 'seven', class: 'numbers', value: '7' },
   { id: 'eight', class: 'numbers', value: '8' },
   { id: 'nine', class: 'numbers', value: '9' },
-  { id: 'multiply', class: 'operators right', value: '×' },
+  { id: 'multiply', class: 'operators right', value: 'x' },
   { id: 'four', class: 'numbers', value: '4' },
   { id: 'five', class: 'numbers', value: '5' },
   { id: 'six', class: 'numbers', value: '6' },
@@ -26,18 +26,36 @@ const keys = [
 ];
 
 class Calculator extends Component {
-  render = () => (
-    <main>
-      <div>
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: '0',
+      next: '',
+      operation: '',
+    };
+  }
+
+  // Add eventlistener to buttons
+  handleButtonClick = (event) => {
+    const { total, next, operation } = calculate(this.state, event.target.name);
+    this.setState({ total, next, operation });
+  }
+
+  render = () => {
+    const data = this.state;
+    return (
+      <main>
         <div>
-          <Screen />
+          <div>
+            <Screen state={this.state} />
+          </div>
+          <div>
+            <Keypad keys={keys} onClick={this.handleButtonClick} state={{ ...data }} />
+          </div>
         </div>
-        <div>
-          <Keypad keys={keys} />
-        </div>
-      </div>
-    </main>
-  );
+      </main>
+    );
+  }
 }
 
 export default Calculator;

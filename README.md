@@ -1,6 +1,6 @@
 ### Math Magicians
 
-## Description :building_construction:
+## Description 🏗️
 
 "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
@@ -9,7 +9,7 @@
 
 N.B: Images will be added on final milestone
 
-**Built With :hammer:**
+**Built With 🔨**
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -17,7 +17,7 @@ N.B: Images will be added on final milestone
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 
-**Tools :hammer_and_wrench:**
+**Tools 🛠️**
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
@@ -26,7 +26,7 @@ N.B: Images will be added on final milestone
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![webpack](https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg)
 
-## Getting Started :checkered_flag:
+## Getting Started 🏁
 
 To get a local copy up and running follow these simple example steps.
 
@@ -43,7 +43,7 @@ git clone https://github.com/fobadara/math-magicians-react.git
 It runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000).
 
-**Prerequisites :scroll:**
+**Prerequisites 📜**
 
 You will be needing:
 
@@ -61,9 +61,9 @@ You can run tests by following these steps:
 
 • We have created a pull request which runs linters or you could simply create a pull request of your own
 
-**Author :writing_hand:**
+**Author ✍️**
 
-:bust_in_silhouette: Abdulfatai Badara
+👤 Abdulfatai Badara
 
 <a target="_blank" href="https://github.com/fobadara"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>
 <a target="_blank"
@@ -81,18 +81,18 @@ href="https://wa.me/+2349066478370">
 src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp account"></a>
 
 
-**:handshake: Contributing**
+**🤝 Contributing**
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-**Show your support :muscle:**
+**Show your support 💪**
 
-Give a :star:️ if you like this project!
+Give a ⭐️ if you like this project!
 
 Hat tip to anyone whose code was used
 
-**:memo: License**
+**📝 License**
 
 This project is licensed by [MIT](LICENSE) -->
