@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+
 import Screen from './screen';
 import Keypad from './keypad';
 import calculate from '../logic/calculate';
@@ -25,37 +26,28 @@ const keys = [
   { id: 'equals', class: 'operators right', value: '=' },
 ];
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '0',
-      next: '',
-      operation: '',
-    };
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: '0',
+    next: '',
+    operation: '',
+  });
 
   // Add eventlistener to buttons
-  handleButtonClick = (event) => {
-    const { total, next, operation } = calculate(this.state, event.target.name);
-    this.setState({ total, next, operation });
-  }
-
-  render = () => {
-    const data = this.state;
-    return (
-      <main>
-        <div>
-          <div>
-            <Screen state={this.state} />
-          </div>
-          <div>
-            <Keypad keys={keys} onClick={this.handleButtonClick} state={{ ...data }} />
-          </div>
-        </div>
-      </main>
-    );
-  }
-}
+  const handleButtonClick = (event) => {
+    const { total, next, operation } = calculate(state, event.target.name);
+    setState({ total, next, operation });
+  };
+  return (
+    <div>
+      <div>
+        <Screen state={state} />
+      </div>
+      <div>
+        <Keypad keys={keys} onClick={handleButtonClick} state={state} />
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;
