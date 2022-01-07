@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../css/keypad.css';
 
 // Create button tags
 const createButtons = (props) => props.keys.map((key) => (
@@ -15,7 +16,7 @@ const createButtons = (props) => props.keys.map((key) => (
 ));
 
 const Keypad = (props) => (
-  <span id="keypad-container">{createButtons(props)}</span>
+  <span className="min-vh-75" id="keypad-container">{createButtons(props)}</span>
 );
 
 createButtons.propTypes = {

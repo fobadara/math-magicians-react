@@ -6,7 +6,7 @@ const Screen = (props) => {
   } = props;
 
   return (
-    <div id="screen">
+    <div id="screen" className="text-break h-25">
       <span>{total}</span>
       <span>{operation}</span>
       <span>{next}</span>
