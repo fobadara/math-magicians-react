@@ -10,7 +10,7 @@
   height: 100%;
   width: 100%;
   overflow-x: auto;
-  overflow-y: none;
+  overflow-y: hidden;
   padding: 0;
   margin: 0;
 }
@@ -88,7 +88,7 @@
   }
 }
 
-@media only screen and (min-width:400px) {
+@media only screen and (min-width: 400px) {
   /* .background {
     overflow: auto;
   } */
