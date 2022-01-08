@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="text-break h-25"
+    id="screen"
+  >
+    <span>
+      0
+    </span>
+    <span />
+    <span />
+  </div>
+</DocumentFragment>
+`;

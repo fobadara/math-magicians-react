@@ -55,4 +55,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export { Calculator, keys };
