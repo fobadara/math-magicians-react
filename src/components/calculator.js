@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-
+import calculate from '../logic/calculate';
+import Aside from './aside';
 import Screen from './screen';
 import Keypad from './keypad';
-import calculate from '../logic/calculate';
 
 const keys = [
   { id: 'clear', class: 'operators', value: 'AC' },
@@ -39,12 +39,17 @@ const Calculator = () => {
     setState({ total, next, operation });
   };
   return (
-    <div>
-      <div>
-        <Screen state={state} />
+    <div className="d-sm-flex justify-content-between">
+      <div className="w-25">
+        <Aside />
       </div>
-      <div>
-        <Keypad keys={keys} onClick={handleButtonClick} state={state} />
+      <div className="w-50">
+        <div>
+          <Screen state={state} />
+        </div>
+        <div>
+          <Keypad keys={keys} onClick={handleButtonClick} state={state} />
+        </div>
       </div>
     </div>
   );
