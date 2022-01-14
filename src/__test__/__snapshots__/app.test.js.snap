@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create snapshot 1`] = `
+<div
+  className="background"
+>
+  <div>
+    <div
+      className="cube"
+    />
+    <div
+      className="cube"
+    />
+    <div
+      className="cube"
+    />
+    <div
+      className="cube"
+    />
+    <div
+      className="cube"
+    />
+  </div>
+  <header>
+    <div
+      className="nav-border"
+    >
+      <nav
+        className="navbar navbar-expand-lg navbar-light"
+      >
+        <div
+          className="container"
+        >
+          <a
+            className="navbar-brand"
+            href="/"
+          >
+            Math Magicians
+          </a>
+          <button
+            aria-controls="responsive-navbar-nav"
+            aria-label="Toggle navigation"
+            className="navbar-toggler collapsed"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="navbar-toggler-icon"
+            />
+          </button>
+          <div
+            aria-expanded={null}
+            className="navbar-collapse collapse"
+            id="responsive-navbar-nav"
+          >
+            <div
+              className="me-auto navbar-nav"
+              onKeyDown={[Function]}
+            />
+            <div
+              className="navbar-nav"
+              onKeyDown={[Function]}
+            >
+              <a
+                className="active nav-link"
+                data-rr-ui-event-key="/"
+                data-testid="home"
+                disabled={false}
+                href="/"
+                id="/"
+                onClick={[Function]}
+                onSelect={[Function]}
+                style={Object {}}
+              >
+                Home
+              </a>
+              <a
+                className="nav-link"
+                data-rr-ui-event-key="calculator"
+                data-testid="quotes"
+                disabled={false}
+                href="/calculator"
+                id="calculator"
+                onClick={[Function]}
+                onSelect={[Function]}
+                style={null}
+              >
+                Calculator
+              </a>
+              <a
+                className="nav-link"
+                data-rr-ui-event-key="quotes"
+                data-testid="quotes"
+                disabled={false}
+                href="/quotes"
+                id="quotes"
+                onClick={[Function]}
+                onSelect={[Function]}
+                style={null}
+              >
+                Quotes
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main
+    className="container"
+  >
+    <div
+      className=""
+    >
+      <h1>
+        Welcome to our page!
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor ratione nulla expedita eligendi error quo corrupti. Id cum placeat voluptate totam modi quaerat eveniet voluptatum ab fuga ullam, aliquam aliquid officia ad in enim earum aut saepe non sit maiores? Officia in explicabo illo similique natus ea voluptatibus eveniet.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, praesentium. Impedit eveniet tenetur illum fugiat harum hic molestias ipsum explicabo exercitationem aspernatur officiis eligendi rerum tempora excepturi nisi debitis voluptate, temporibus, in magnam voluptatem autem? Facilis, dolor? Provident, tenetur labore. Veniam nobis, inventore libero quis tenetur est enim iste nisi!
+      </p>
+    </div>
+  </main>
+</div>
+`;
