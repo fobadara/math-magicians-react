@@ -1,23 +1,30 @@
 import operate from '../logic/operate';
 
-describe('operate', () => {
-  test('should get the sum of 2 and 3', () => {
-    expect(operate(2, 3, '+')).toBe('5');
+describe('Operate', () => {
+  const num1 = 4;
+  const num2 = 2;
+  const addition = operate(num1, num2, '+');
+  test(' The test check for  Addition of two number', () => {
+    expect(addition).toBe('6');
   });
-
-  test('should get the difference of 2 and 3', () => {
-    expect(operate(2, 3, '-')).toBe('-1');
+  const subtraction = operate(num1, num2, '-');
+  test('The test check for subtraction of two number', () => {
+    expect(subtraction).toBe('2');
   });
-
-  test('should multiply 2 and 3', () => {
-    expect(operate(2, 3, 'x')).toBe('6');
+  const division = operate(num1, num2, '÷');
+  test(' The test check for division of two number', () => {
+    expect(division).toBe('2');
   });
-
-  test('should divide 2 and 3', () => {
-    expect(operate(2, 3, '÷')).toBe('0.66666666666666666667');
+  const multiplication = operate(num1, num2, 'x');
+  test('The test check for multiplication of two number', () => {
+    expect(multiplication).toBe('8');
   });
-
-  test('should get the percentage of 2 and 3', () => {
-    expect(operate(2, 3, '%')).toBe('2');
+  const noDivisibility = operate(num1, '0', '÷');
+  test('The  test that check for no divisibility by denominator zero', () => {
+    expect(noDivisibility).toBe("Can't divide by 0.");
+  });
+  const modulus = operate(num1, num2, '%');
+  test('The  test that checks for the modulus of a number', () => {
+    expect(modulus).toBe('0');
   });
 });
