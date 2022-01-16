@@ -7,7 +7,14 @@
   1.  Make simple calculations.
   2.  Read a random math-related quote.
 
-N.B: Images will be added on final milestone
+||             Math magicians ||
+|-|-----------------------------------|-|
+||![screenshot](./src/img/screen.gif)||
+
+||<div align="center"><a href="https://fobadara.github.io/Leaderboard/dist/" text="bold">Live Demo Links</a></div>**||
+<span align="center">
+|-|----------------------|-| ----------------------|-|
+||<a href="https://the-math-magicians.herokuapp.com/" target="_blank">![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)</a>||<a href="https://the-math-magicians.netlify.app/" target="_blank">!![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)</a>||</span>
 
 **Built With 🔨**
 
