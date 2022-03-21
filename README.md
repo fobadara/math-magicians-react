@@ -92,6 +92,6 @@ Give a ⭐️ if you like this project!
 
 Hat tip to anyone whose code was used
 
-**📝 License**
+## 📝 License
 
 This project is licensed by [MIT](LICENSE) -->
