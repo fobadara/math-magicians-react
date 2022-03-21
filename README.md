@@ -30,19 +30,26 @@ To get a local copy up and running follow these simple example steps.
 
 > Clone the app by running this command
 
-```bash 
+```md 
 git clone https://github.com/fobadara/math-magicians-react.git
 ```
+
+>Dont forget to navigate to the repository with
+
+```md
+cd math-magicians-react
+```
+
 > Make sure you install the dependencies by runing this command
 
-```bash
+```md
 npm install
 ```
 
 
 > View it in your browser by running this command
 
-```bash
+```md
  npm start
 ```
 It runs the app in the development mode.\
@@ -73,13 +80,13 @@ You can run tests by following these steps:
 <a target="_blank" href="mailto:fob90s@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white" alt="Gmail account"></a> <a target="_blank" href="https://wa.me/+2349066478370"> <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp account"></a> (Click to reach me)|
 
 
-**🤝 Contributing**
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-**Show your support 💪**
+## Show your support 💪
 
 Give a ⭐️ if you like this project!
 
